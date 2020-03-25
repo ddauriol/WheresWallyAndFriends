@@ -1,0 +1,17 @@
+.gameGrid{
+    background-color: brown;
+    opacity: 0.25;
+    border: 0.5px;
+    border-color: black;
+    border-style: solid;
+    height: 38px !important;
+    width: 60.8px !important;
+}
+
+.gameBackground{
+    background-image: url("/src/client/img/jpg/wally_place_14.jpg") !important;
+    /* height: 759.05px; */
+    width: 1280px !important;
+    height: 100% !important;
+    background-color: beige;
+}

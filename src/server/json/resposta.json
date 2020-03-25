@@ -1,0 +1,248 @@
+[{
+        "place_name": "wally_place_01",
+        "place" : 1,
+        "person": [{
+                "name": "Wally",
+                "points": "5",
+                "poss": "grid_8_16"
+            },
+            {
+                "name": "Yllaw",
+                "points": "4",
+                "poss": "grid_15_5"
+            },
+            {
+                "name": "Wenda",
+                "points": "3",
+                "poss": "grid_15_7"
+            }
+        ]
+    },
+    {
+        "place_name": "wally_place_02",
+        "place" : 2,
+        "person": [{
+                "name": "Wally",
+                "points": "5",
+                "poss": "grid_8_7"
+            },
+            {
+                "name": "Yllaw",
+                "points": "4",
+                "poss": "grid_15_3"
+            },
+            {
+                "name": "Wenda",
+                "points": "3",
+                "poss": "grid_15_19"
+            }
+        ]
+    },
+    {
+        "place_name": "wally_place_03",
+        "place" : 3,
+        "person": [{
+                "name": "Wally",
+                "points": "5",
+                "poss": "grid_8_14"
+            },
+            {
+                "name": "Wizard",
+                "points": "4",
+                "poss": "grid_7_6"
+            },
+            {
+                "name": "Yllaw",
+                "points": "3",
+                "poss": "grid_7_3"
+            }
+        ]
+    },
+    {
+        "place_name": "wally_place_04",
+        "place" : 4,
+        "person": [{
+                "name": "Wally",
+                "points": "5",
+                "poss": "grid_9_21"
+            },
+            {
+                "name": "Wenda",
+                "points": "4",
+                "poss": "grid_17_1"
+            },
+            {
+                "name": "Yllaw",
+                "points": "3",
+                "poss": "grid_13_6"
+            }
+        ]
+    },
+    {
+        "place_name": "wally_place_05",
+        "place" : 5,
+        "person": [{
+                "name": "Wally",
+                "points": "5",
+                "poss": "grid_9_11"
+            },
+            {
+                "name": "Wenda",
+                "points": "4",
+                "poss": "grid_8_1"
+            },
+            {
+                "name": "Yllaw",
+                "points": "3",
+                "poss": "grid_13_8"
+            }
+        ]
+    },
+    {
+        "place_name": "wally_place_06",
+        "place" : 6,
+        "person": [{
+                "name": "Wally",
+                "points": "5",
+                "poss": "grid_17_19"
+            },
+            {
+                "name": "Wizard",
+                "points": "4",
+                "poss": "grid_15_13"
+            },
+            {
+                "name": "Wenda",
+                "points": "3",
+                "poss": "grid_15_12"
+            }
+        ]
+    },
+    {
+        "place_name": "wally_place_07",
+        "place" : 7,
+        "person": [{
+                "name": "Wally",
+                "points": "5",
+                "poss": "grid_6_2"
+            },
+            {
+                "name": "Wizard",
+                "points": "4",
+                "poss": "grid_6_20"
+            },
+            {
+                "name": "Wenda",
+                "points": "3",
+                "poss": "grid_18_18"
+            }
+        ]
+    },
+    {
+        "place_name": "wally_place_08",
+        "place" : 8,
+        "person": [{
+                "name": "Wally",
+                "points": "5",
+                "poss": "grid_17_3"
+            }
+        ]
+    },
+    {
+        "place_name":"wally_place_09",
+        "place" : 9,
+        "person":[
+            {
+                "name":"Wally",
+                "points": "5",
+                "poss": "grid_7_9"
+            },
+            {
+                "name":"Yllaw",
+                "points": "4",
+                "poss": "grid_16_2"
+            },
+            {
+                "name":"Wenda",
+                "points": "3",
+                "poss": "grid_10_3"
+            }
+        ]
+    },
+    {
+        "place_name":"wally_place_10",
+        "place" : 10,
+        "person":[
+            {
+                "name":"Wally",
+                "points": "5",
+                "poss": "grid_10_8"
+            }
+        ]
+    },
+    {
+        "place_name":"wally_place_11",
+        "place" : 11,
+        "person":[
+            {
+                "name":"Wally",
+                "points": "5",
+                "poss": "grid_3_17"
+            },
+            {
+                "name":"Yllaw",
+                "points": "4",
+                "poss": "grid_17_1"
+            },
+            {
+                "name":"Wenda",
+                "points": "3",
+                "poss": "grid_7_19"
+            }
+        ]
+    },
+    {
+        "place_name":"wally_place_12",
+        "place" : 12,
+        "person":[
+            {
+                "name":"Wally",
+                "points": "5",
+                "poss": "grid_10_4"
+            },
+            {
+                "name":"Yllaw",
+                "points": "4",
+                "poss": "grid_3_8"
+            },
+            {
+                "name":"Wenda",
+                "points": "3",
+                "poss": "grid_18_13"
+            }
+        ]
+    },
+    {
+        "place_name":"wally_place_13",
+        "place" : 13,
+        "person":[
+            {
+                "name":"Wenda",
+                "points": "5",
+                "poss": "grid_19_7"
+            }
+        ]
+    },
+    {
+        "place_name":"wally_place_14",
+        "place" : 14,
+        "person":[
+            {
+                "name":"Wally",
+                "points": "5",
+                "poss": "grid_10_11"
+            }
+        ]
+    }
+
+]
