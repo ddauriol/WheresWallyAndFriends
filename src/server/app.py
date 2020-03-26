@@ -4,32 +4,41 @@ from flask_socketio import SocketIO, send, emit
 import json
 import time
 
-from jsonmanager import gameManager, respostaManager
+from dbmanager import Places, Users
+from jsonmanager import Respostas
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'whereswallyandfriends'
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 json_folder = './json/'
-json_games = 'games.json'
 json_respostas = 'resposta.json'
+json_users = 'user.json'
+json_places = 'places.json'
 
-games = gameManager(json_folder, json_games)
-respostas = respostaManager(json_folder, json_respostas)
+respostas = Respostas(json_folder, json_respostas)
+users = Users(json_folder + json_users)
+places = Places(json_folder + json_places)
+places.PurgeDB()
+places.CreatPlace()
+
 
 @socketio.on('connect')
 def enviarDadosJogo():
     emit('jogador_conectado', "")
 
 
-@socketio.on('entrar_no_jogo')
-def handleEntrarNoJogo(data):
-    user_name, room = data.split(';')
-    room = int(room)
-    games.newPlayer(room, '127.0.0.1', user_name)
-    gamesInfo = games.getGameInfo(room)
-    emit('dados_do_jogo', gamesInfo)
+@socketio.on('verifica_resposta')
+def verificaResposta(data):
+    print(data)
+    place = places.GetPlace()
+    for plc in place:
+        place_int = plc['active']
+    print(respostas.getResposta(place_int))
+    # emit('resultado',
+    #      {'room': room, 'msg': msg_retorno},
+    #      broadcast=True)
 
 
 if __name__ == '__main__':
-    socketio.run(app, host="127.0.0.1")
+    socketio.run(app, debug=True, host="127.0.0.1")

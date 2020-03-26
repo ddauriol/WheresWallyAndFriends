@@ -45,6 +45,9 @@ class Places():
         json_schema = {"active": 0}
         self.db_places.insert(json_schema)
 
+    def GetPlace(self):
+        return self.db_places.all()
+
     def NextPlace(self):
         places = self.db_places.all()
         for place in places:
@@ -52,7 +55,7 @@ class Places():
             next_place = int(active_place) + 1
             if next_place < 15:
                 self.db_places.update({"active": next_place},
-                                     self.place.active == active_place)
+                                      self.place.active == active_place)
 
     def PurgeDB(self):
         self.db_places.purge()
@@ -65,8 +68,8 @@ class Places():
 # users.UpadatePoints("Mirna", 5)
 
 
-storage_local = "./src/server/json/places.json"
-place = Places(storage_local)
-place.CreatPlace()
-place.NextPlace()
-place.PurgeDB()
+# storage_local = "./src/server/json/places.json"
+# place = Places(storage_local)
+# place.CreatPlace()
+# place.NextPlace()
+# place.PurgeDB()

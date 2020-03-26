@@ -42,6 +42,7 @@ document.addEventListener('click', function(e) {
     var target = e.target || e.srcElement,
         TextId = target.id;
     console.log(TextId)
+    socket.emit('verifica_resposta', TextId)
 }, false);
 
 CreateGrid()
