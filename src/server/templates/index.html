@@ -29,22 +29,7 @@
                         </a>
                     </div>
                     <div class="col-4">
-                        <form class="form-inline">
-                            <button type="button" class="btn alert-primary ml-2">
-                                <img src="{{ url_for('static', filename='/img/person/Wizard.png') }}" width="30" height="30"
-                                    class="d-inline-block align-top ml-1">
-                                <span class="badge badge-light">5</span>
-                            </button>
-                            <button type="button" class="btn alert-primary ml-2">
-                                <img src="{{ url_for('static', filename='/img/person/Wizard.png') }}" width="30" height="30"
-                                    class="d-inline-block align-top ml-1">
-                                <span class="badge badge-light">5</span>
-                            </button>
-                            <button type="button" class="btn alert-primary ml-2">
-                                <img src="{{ url_for('static', filename='/img/person/Wizard.png') }}" width="30" height="30"
-                                    class="d-inline-block align-top ml-1">
-                                <span class="badge badge-light">5</span>
-                            </button>
+                        <form id="form_person" class="form-inline">
                         </form>
                     </div>
                     <div class="col-2">
@@ -59,21 +44,15 @@
                     <div class="col-3">
                         <form class="form-inline my-2 my-lg-0">
                             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                <div class="btn-group" role="group">
+                                <div id="list_players" class="btn-group" role="group">
                                     <button id="btnGroupDrop1" type="button"
                                         class="btn btn-primary dropdown-toggle mr-3" data-toggle="dropdown"
                                         aria-haspopup="true" aria-expanded="false">
                                         Jogadores
                                     </button>
-                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                        <a class="dropdown-item" href="#">Mirna
-                                            <span class="badge alert-primary">5</span></a>
-                                        <a class="dropdown-item" href="#">Elisa
-                                            <span class="badge alert-primary">5</span></a>
-                                    </div>
                                 </div>
                             </div>
-                            <button class="btn btn-danger my-2 my-sm-0" type="submit">Sair</button>
+                            <button id="btn_sair" class="btn btn-danger my-2 my-sm-0" type="button">Sair</button>
                         </form>
                     </div>
                 </nav>
@@ -91,14 +70,17 @@
         </div>
     </div>
     <!-- DIV Alert -->
-    <br>
-    <div class="alert alert-success" id="success-alert" style="display: none;">
-        <button type="button" class="close" data-dismiss="alert">x</button>
-        <strong id="msg_sucess">Sucesso! </strong>
-    </div>
-    <div class="alert alert-danger" id="danger-alert" style="display: none;">
-        <button type="button" class="close" data-dismiss="alert">x</button>
-        <strong id="msg_error">Atenção! </strong>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-10">
+                <div class="alert alert-success" id="success-alert" style="display: none;">
+                    <strong id="msg_sucess">Sucesso! </strong>
+                </div>
+                <div class="alert alert-danger alertMsg" id="danger-alert" style="display: none;">
+                    <strong id="msg_error">Atenção! </strong>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->

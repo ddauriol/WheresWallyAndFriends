@@ -1,9 +1,9 @@
 .gameGrid{
-    background-color: brown;
-    opacity: 0.25;
+    /* background-color: brown; */
+    /* opacity: 0.25;
     border: 0.5px;
     border-color: black;
-    border-style: solid;
+    border-style: solid; */
     height: 38px !important;
     width: 60.8px !important;
 }
@@ -13,4 +13,12 @@
     width: 1280px !important;
     height: 100% !important;
     background-color: beige;
+}
+
+.getPerson{
+    background-color: brown;
+    opacity: 0.55;
+    border: 0.5px;
+    border-color: black;
+    border-style: solid;
 }
