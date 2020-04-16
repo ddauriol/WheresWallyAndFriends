@@ -9,6 +9,7 @@ class Responses():
         self.file: str = self.json_folder + self.json_response
         self.responses: list = []
         self.active_response: list = []
+        self.max_points: int = 0
 
     def get_response(self, place: int):
         with open(self.file, "r") as f:
@@ -16,11 +17,17 @@ class Responses():
         for response in self.responses:
             if response['place'] == place:
                 self.active_response = response['person']
+        self.calc_max_points()
 
     def check_response(self, grid: str):
         for response in self.active_response:
             if response['poss'] == grid:
                 return response
+
+    def calc_max_points(self):
+        self.max_points = 0
+        for response in self.active_response:
+            self.max_points = self.max_points + int(response['points'])
 
 
 class Users():
@@ -84,6 +91,7 @@ class Board():
         self.file: str = self.json_folder + self.json_game
         self.active_place: int = 0
         self.games: list = []
+        self.courent_points: int = 0
         self.read_game()
 
     def file_exist(self):
@@ -111,6 +119,12 @@ class Board():
         self.file_exist()
         self.games = [place]
         self.active_place = place
+        self.white_file()
+
+    def next_place(self):
+        self.file_exist()
+        self.active_place = self.active_place + 1
+        self.games = [self.active_place]
         self.white_file()
 
     def clear_game(self):
